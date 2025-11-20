@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2 hollis clicker game</title>
+</head>
+<body>
+  <h1>2 hollis Clicker Game</h1>
+  <p>Score: <span id="score">0</span></p>
+  <button id="clickButton">2 hollis</button>
+  <button id="clickbutton">choboni upgrade</button>
+  <script>
+
+let score = 0;
+
+
+const scoreDisplay = document.getElementById("score");
+const button = document.getElementById("clickButton");
+
+
+button.addEventListener("click", function() {
+  score++;
+  scoreDisplay.textContent = score; 
+});
+
+
+  </script>
+  
+
+</body>
+</html>
+

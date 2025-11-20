@@ -22,7 +22,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Clicker Game</title>
+<title>2 hollis Clicker Game</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -64,38 +64,6 @@
 <h1>Clicker Game</h1>
 <div id="counter">0</div>
 
-<button id="clickBtn">Click Me!</button>
 
-<br><br>
 
-<button class="upgrade" id="upgradeBtn">Buy Upgrade (+1 per click) — Cost: 20</button>
-
-<script>
-    let points = 0;
-    let perClick = 1;
-    let upgradeCost = 20;
-
-    const counter = document.getElementById("counter");
-    const clickBtn = document.getElementById("clickBtn");
-    const upgradeBtn = document.getElementById("upgradeBtn");
-
-    clickBtn.addEventListener("click", () => {
-        points += perClick;
-        counter.textContent = points;
-    });
-
-    upgradeBtn.addEventListener("click", () => {
-        if (points >= upgradeCost) {
-            points -= upgradeCost;
-            perClick++;
-            upgradeCost = Math.floor(upgradeCost * 1.5);
-            counter.textContent = points;
-            upgradeBtn.textContent = `Buy Upgrade (+1 per click) — Cost: ${upgradeCost}`;
-        } else {
-            alert("Not enough points!");
-        }
-    });
-</script>
-
-</body>
-</html>
+    
