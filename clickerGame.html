@@ -9,23 +9,23 @@
   <button id="clickButton">2 hollis</button>
   <button id="clickbutton">choboni upgrade</button>
   <script>
+    let score = 0;
 
-let score = 0;
+    const scoreDisplay = document.getElementById("score");
+    const button = document.getElementById("clickButton");
+    const upgradeButton = document.getElementById("clickbutton"); 
 
+    
+    button.addEventListener("click", function() {
+      score++;
+      scoreDisplay.textContent = score; 
+    });
 
-const scoreDisplay = document.getElementById("score");
-const button = document.getElementById("clickButton");
-
-
-button.addEventListener("click", function() {
-  score++;
-  scoreDisplay.textContent = score; 
-});
-
-
+   
+    upgradeButton.addEventListener("click", function() {
+      score += 10; 
+      scoreDisplay.textContent = score;
+    });
   </script>
-  
-
 </body>
 </html>
-
