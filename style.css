@@ -9,12 +9,13 @@ html {
 h1{
     border: 2px solid;
     
-  
+}
 
 body {
     color: var(--text);
     background: var(--background);
-    font-family: "libre basckervill" ;
+    font-family: "amarna" ;
+    text-align: center;
 }
 
 h1,
@@ -24,7 +25,7 @@ h3 {
     font-family: "kapakana" ;
     font-size: 50px;
     font-weight: 500;
-
+}
 p {
     background: var(--accent);
 }
